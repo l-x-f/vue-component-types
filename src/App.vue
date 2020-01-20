@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    注册方式分类
     <h3>局部组件</h3>
     <local-component msg="我是局部组件" />
     <hr />
@@ -8,20 +9,24 @@
     <global-components />
     <hr />
 
+    是否是异步
     <h3>异步组件</h3>
     <async-component />
     <hr />
 
+    是否是动态
     <h3>动态组件</h3>
     <button @click="toggle('1')">点击切换组件1</button>
     <button class="btn" @click="toggle('2')">点击切换组件2</button>
     <component :is="currentTabComponent"></component>
     <hr />
 
+    是否有状态
     <h3>函数式组件（无状态组件）</h3>
     <function-component title="函数式组件" />
     <hr />
 
+    是否循环引用
     <h3>递归组件</h3>
     <recursive-component :list="list" />
     <hr />
